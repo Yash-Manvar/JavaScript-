@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+    let n = +prompt("Input Number for how many rows print?","5")
+    let string = "";
+    for(let i = 1; i <=n; i++) { 
+      for(let j = 1; j <=n; j++) {
+        if(i == j){
+          string += "*";
+        }
+        else if (i + j == n+1){
+            string += "*";
+        }
+        else{
+            string += " ";
+        }
+      }
+      string += "\n";
+    }
+    alert(string);
+          </script>
+
+</body>
+
+</html>
