@@ -1,16 +1,18 @@
 <!DOCTYPE HTML>
 <html>
+
 <body>
+  <h3>Output check in console</h3>
   <script>
-    let n = +prompt("Input Number for how many rows print?","5")
+    const n = +prompt("Input Number for how many rows print?", "5")
     let string = "";
-    for(let i = 0; i < n; i++) { 
-      for(let j = 0; j < n; j++) { 
-        if(i === 0 || i === n - 1) {
+    for (let i = 0; i < n; i++) {
+      for (let j = 0; j < n; j++) {
+        if (i === 0 || i === n - 1) {
           string += "*";
         }
         else {
-          if(j === 0 || j === n - 1) {
+          if (j === 0 || j === n - 1) {
             string += "*";
           }
           else {
@@ -20,8 +22,8 @@
       }
       string += "\n";
     }
-    alert(string);
-          </script>
+    console.log(string);
+  </script>
 
 </body>
 

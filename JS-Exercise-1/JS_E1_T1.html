@@ -1,26 +1,26 @@
 <!DOCTYPE HTML>
 <html>
-
 <body>
+  <h3>Output check in console</h3>
   <script>
-    let n = +prompt("Input Number for how many rows print?","5")
+    const n = +prompt("Input Number for how many rows print?", "5")
     let string = "";
-    for(let i = 1; i <=n; i++) { 
-      for(let j = 1; j <=n; j++) {
-        if(i == j){
+    for (let i = 1; i <= n; i++) {
+      for (let j = 1; j <= n; j++) {
+        if (i == j) {
           string += "*";
         }
-        else if (i + j == n+1){
-            string += "*";
+        else if (i + j == n + 1) {
+          string += "*";
         }
-        else{
-            string += " ";
+        else {
+          string += " ";
         }
       }
       string += "\n";
     }
-    alert(string);
-          </script>
+    console.log(string);
+  </script>
 
 </body>
 
